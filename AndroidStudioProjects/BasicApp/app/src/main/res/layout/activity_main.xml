@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_foreground"
+    tools:context=".MainActivity">
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <RelativeLayout
+          android:layout_marginTop="32dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <ImageView
+              android:layout_alignParentRight="true"
+              android:src="@color/cardview_dark_background"
+              android:layout_width="62dp"
+              android:layout_height="62dp">
+          </ImageView>
+          <TextView
+              android:text="Catch the Robber"
+              android:textSize="32sp"
+              android:textColor="#40BBEE"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+          </TextView>
+      </RelativeLayout>
+
+      <GridLayout
+          android:columnCount="2"
+          android:rowCount="3"
+          android:columnOrderPreserved="false"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <androidx.cardview.widget.CardView
+              android:id = "@+id/select_camera"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              app:cardElevation="6dp"
+              app:cardCornerRadius="12dp"
+              android:layout_margin="12dp">
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:gravity="center"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <ImageView
+                       android:src="@color/design_default_color_primary_dark"
+                       android:layout_width="80dp"
+                       android:layout_height="80dp">
+                   </ImageView>
+
+                   <TextView
+                       android:layout_marginTop="12dp"
+                       android:textSize="20sp"
+                       android:text="Remote View"
+                       android:textColor="#40BBEE"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"></TextView>
+                   <SurfaceView
+                       android:id="@+id/surfaceView"
+                       android:layout_width="fill_parent"
+                       android:layout_height="fill_parent" />
+               </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              app:cardElevation="6dp"
+              app:cardCornerRadius="12dp"
+              android:layout_margin="12dp">
+
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <ImageView
+                      android:src="@color/design_default_color_primary_dark"
+                      android:layout_width="80dp"
+                      android:layout_height="80dp"></ImageView>
+                  <TextView
+
+                      android:layout_marginTop="12dp"
+                      android:textSize="20sp"
+                      android:text="Activate Alaram"
+                      android:textColor="#40BBEE"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"></TextView>
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              app:cardElevation="6dp"
+              app:cardCornerRadius="12dp"
+              android:layout_margin="12dp">
+
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <ImageView
+                      android:src="@color/design_default_color_primary_dark"
+                      android:layout_width="80dp"
+                      android:layout_height="80dp"></ImageView>
+                  <TextView
+
+                      android:layout_marginTop="12dp"
+                      android:textSize="18sp"
+                      android:text="Sensor Check"
+                      android:textColor="#40BBEE"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"></TextView>
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              app:cardElevation="6dp"
+              app:cardCornerRadius="12dp"
+              android:layout_margin="12dp">
+
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <ImageView
+                      android:src="@color/design_default_color_primary_dark"
+                      android:layout_width="80dp"
+                      android:layout_height="80dp"></ImageView>
+                  <TextView
+
+                      android:layout_marginTop="12dp"
+                      android:textSize="18sp"
+                      android:text="Messages"
+                      android:textColor="#40BBEE"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"></TextView>
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              app:cardElevation="6dp"
+              app:cardCornerRadius="12dp"
+              android:layout_margin="12dp">
+
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <ImageView
+                      android:src="@color/design_default_color_primary_dark"
+                      android:layout_width="80dp"
+                      android:layout_height="80dp"></ImageView>
+                  <TextView
+
+                      android:layout_marginTop="12dp"
+                      android:textSize="18sp"
+                      android:text="Errors"
+                      android:textColor="#40BBEE"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"></TextView>
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+      </GridLayout>
+</LinearLayout>
+
+</ScrollView>
